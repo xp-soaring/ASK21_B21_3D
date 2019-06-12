@@ -1,0 +1,37 @@
+A
+1100
+VRCONFIG
+
+################################
+#TELEPORT HOTSPOTS
+################################
+
+BEGIN_TELEPORT_HOTSPOT SITTING Pilot's Seat
+	AABB -0.33 -0.5 -2.65 0.33 0.46 -0.95
+	PRESET_XYZ 0.0 0.3 -1.5
+	PRESET_PSI 0.0
+	PRESET_THE 0.0
+	PRESET_PHI 0.0
+END_TELEPORT_HOTSPOT
+
+BEGIN_TELEPORT_HOTSPOT SITTING CoPilot's Seat
+	AABB -0.33 -0.4 -0.95 0.33 0.46 0.2
+	PRESET_XYZ 0.0 0.3 -0.35
+	PRESET_PSI 0.0
+	PRESET_THE 0.0
+	PRESET_PHI 0.0
+END_TELEPORT_HOTSPOT
+
+BEGIN_MANIP command_knob sim/radios/com1_standy_flip sim/radios/com1_standy_flip
+	DEG_PER_ACTION 20
+END_MANIP
+
+# Front yoke
+BEGIN_MANIP drag_xy sim/cockpit2/controls/yoke_roll_ratio	sim/cockpit2/controls/yoke_pitch_ratio
+	YOKE_MANIP_ROTATE 0.007013 -0.164772 0.996418 -1 0 0 15 -15 0.000214 -0.164813 0.994315 0 0 1 15 -15
+END_MANIP
+
+# Back Yoke
+#BEGIN_MANIP drag_xy sim/cockpit2/controls/yoke_roll_ratio	sim/cockpit2/controls/yoke_pitch_ratio
+#	YOKE_MANIP_ROTATE 0.007013 -0.164772 2.052760 -1 0 0 15 -15 0.000214 -0.164813 2.050654 0 0 1 15 -15
+#END_MANIP
