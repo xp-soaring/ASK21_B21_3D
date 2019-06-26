@@ -22,16 +22,3 @@ BEGIN_TELEPORT_HOTSPOT SITTING CoPilot's Seat
 	PRESET_PHI 0.0
 END_TELEPORT_HOTSPOT
 
-BEGIN_MANIP command_knob sim/radios/com1_standy_flip sim/radios/com1_standy_flip
-	DEG_PER_ACTION 20
-END_MANIP
-
-# Front yoke
-BEGIN_MANIP drag_xy sim/cockpit2/controls/yoke_roll_ratio	sim/cockpit2/controls/yoke_pitch_ratio
-	YOKE_MANIP_ROTATE 0.007013 -0.164772 0.996418 -1 0 0 15 -15 0.000214 -0.164813 0.994315 0 0 1 15 -15
-END_MANIP
-
-# Back Yoke
-#BEGIN_MANIP drag_xy sim/cockpit2/controls/yoke_roll_ratio	sim/cockpit2/controls/yoke_pitch_ratio
-#	YOKE_MANIP_ROTATE 0.007013 -0.164772 2.052760 -1 0 0 15 -15 0.000214 -0.164813 2.050654 0 0 1 15 -15
-#END_MANIP
