@@ -5,10 +5,12 @@
 -- TRIM trigger calibration, must match aircraft for trigger trim to set accurately
 TRIM_SPEED_KTS = { 45, 57, 84 } -- cruise speeds (knots) for trim range +1..0..-1
 
-print("b21_trim starting")
+print("b21_trim starting, v0.89")
 
 -- WRITE datarefs
 local DATAREF_TRIM = globalPropertyf("sim/cockpit2/controls/elevator_trim") -- -1.0 .. +1.0
+--local DATAREF_TRIM_DEBUG = 0.3
+
 -- READ datarefs
 local DATAREF_AIRSPEED_KTS = globalPropertyf("sim/cockpit2/gauges/indicators/airspeed_kts_pilot")
 local DATAREF_TIME_S = globalPropertyf("sim/network/misc/network_time_sec")
@@ -32,7 +34,10 @@ function clicked_trim_trigger(phase)
     local time_now_s = get(DATAREF_TIME_S)
     if time_now_s > command_time_s + 0.2 and phase == SASL_COMMAND_BEGIN
     then
+        
         command_time_s = time_now_s
+
+        print("b21_trim command b21/trigger/trim started at",command_time_s)
 
         playSample(sound_trim, false)
 
@@ -40,7 +45,7 @@ function clicked_trim_trigger(phase)
         if get(DATAREF_ONGROUND) == 1
         then
             command_trim = get(DATAREF_YOKE_PITCH)
-            print("On Ground: required trim set to",command_trim)
+            print("b21_trim On Ground: command trim set to",command_trim)
             return
         end
 
@@ -63,7 +68,7 @@ function clicked_trim_trigger(phase)
         else
             command_trim = -1.0                          -- i.e. set -1
         end
-        print("required trim set to",command_trim)
+        print("b21_trim command trim set to",command_trim)
     end
     return 1
 end
@@ -82,14 +87,15 @@ function update()
     -- (otherwise will always override other trim inputs)
     -- Also only update every half-second
     local trim_time_step = 0.5  -- update 2 per second max
-    if  time_now_s < command_time_s + 5.0 and time_delta_s > trim_time_step
+    if  (time_now_s < command_time_s + 5.0) and (time_delta_s > trim_time_step)
     then
+        --local current_trim = DATAREF_TRIM_DEBUG --get(DATAREF_TRIM)
         local current_trim = get(DATAREF_TRIM)
+        print("b21_trim read DATAREF_TRIM at", time_now_s, time_delta_s, current_trim)
         local trim_delta = command_trim - current_trim
         --print("update trim trim_delta="..trim_delta)
         if  math.abs(trim_delta) > 0.05
         then
-            --print("time_delta",time_delta_s, current_trim, trim_delta)
             local new_trim = current_trim + trim_delta * trim_time_step * TRIM_PER_SECOND
             if new_trim > 1.0
             then
@@ -99,6 +105,8 @@ function update()
                 new_trim = -1.0
             end
             --print("new trim", new_trim)
+            print("b21_trim writing DATAREF_TRIM",new_trim,time_delta_s, current_trim, trim_delta)
+            --DATAREF_TRIM_DEBUG = new_trim --set(DATAREF_TRIM, new_trim)
             set(DATAREF_TRIM, new_trim)
         end
         prev_trim_time_s = time_now_s
