@@ -237,7 +237,7 @@ end --update
 
 function draw()
     -- logInfo("gpsnav draw called")
-    sasl.gl.drawTexture(background_img, 0, 0, 100, 89) -- draw background texture
+    sasl.gl.drawTexture(background_img, 0, 0, 100, 89, {1.0,1.0,1.0,1.0}) -- draw background texture
     -- sasl.gl.drawLine(0,0,100,100,green)
 
     -- "1/5: 1N7"

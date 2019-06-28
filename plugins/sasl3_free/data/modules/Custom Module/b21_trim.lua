@@ -3,7 +3,7 @@
 -- Take current airspeed for range Min-Mid-Max and set trim dataref to +1 .. 0 .. -1
 
 -- TRIM trigger calibration, must match aircraft for trigger trim to set accurately
-TRIM_SPEED_KTS = { 45, 57, 84 } -- cruise speeds (knots) for trim range +1..0..-1
+TRIM_SPEED_KTS = { 46, 64, 87 } -- cruise speeds (knots) for trim range +1..0..-1
 
 print("b21_trim starting, v0.89")
 
