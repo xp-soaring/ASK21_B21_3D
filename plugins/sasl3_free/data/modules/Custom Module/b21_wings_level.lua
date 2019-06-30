@@ -69,7 +69,7 @@ function crew_force()
     local roll_rate = get(DATAREF_ROLL_RATE_DEG_S)
     local roll_force = (-roll / 10.0) * WING_LEVELLER_FORCE * WING_LENGTH   -- roll force proportional to required move
     local roll_rate_force = -roll_rate * 100 -- create damping force based on roll speed
-    print("wings_level roll="..roll,"crew"..roll_force,"roll drag="..roll_rate_force,"total="..roll_force+roll_rate_force)
+    --print("wings_level roll="..roll,"crew"..roll_force,"roll drag="..roll_rate_force,"total="..roll_force+roll_rate_force)
     return roll_force + roll_rate_force
 end
 
