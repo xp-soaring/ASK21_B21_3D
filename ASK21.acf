@@ -140,7 +140,7 @@ P _gear/0/_lonE 0.0
 P _gear/0/_lonN 0.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 2988.100830078
-P _gear/0/_stat_def 0.387254566
+P _gear/0/_stat_def 0.387254745
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -174,7 +174,7 @@ P _gear/1/_lonE 0.0
 P _gear/1/_lonN 0.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 2041.868774414
-P _gear/1/_stat_def 0.082205087
+P _gear/1/_stat_def 0.082205079
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -13606,7 +13606,7 @@ P _part/85/_part_specs_invis 1
 P _part/85/_part_tex 0
 P _part/85/_part_the 0.0
 P _part/85/_part_x 0.0
-P _part/85/_part_y -0.712745428
+P _part/85/_part_y -0.712745309
 P _part/85/_part_z 10.199999809
 P _part/85/_patt_con 0
 P _part/85/_patt_prt 0
@@ -23798,7 +23798,7 @@ PANEL_2D_BEGIN
 PANEL_2D_END
 PANEL_3D_BEGIN
 ins_tailnum ins_tailnum
-  POS 256.000000 234.000000
+  POS 204.000000 42.000000
   DATAREF 
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
@@ -24062,7 +24062,7 @@ gen_annun vario_302_stf_te_in
   KEY_FRAME 1.000000 1.000000
 
 gen_annun vario_57_background
-  POS 358.000000 272.000000
+  POS 398.000000 282.000000
   IMAGE vario_57/vario_57_background
   DATAREF 
   SHOW_EQUAL 1.000000 b21/units_vario
@@ -24072,7 +24072,7 @@ gen_annun vario_57_background
   KEY_FRAME 1.000000 1.000000
 
 gen_needle vario_57_needle
-  POS 356.000000 274.000000
+  POS 396.000000 285.000000
   IMAGE vario_57/vario_57_needle
   DATAREF b21/vario_57/needle_fpm
   LIGHT_MODE MECHANICAL
@@ -24087,7 +24087,7 @@ gen_needle vario_57_needle
   NEEDLE_OFFSET_Y -5.000000
 
 gen_rotary vario_57_center
-  POS 357.500000 270.500000
+  POS 397.500000 280.500000
   IMAGE vario_57/vario_57_center
   DATAREF 
   LIGHT_MODE MECHANICAL
@@ -24403,5 +24403,47 @@ gen_rotary smoke
   CURSOR BUTTON
   CLICK_DX 0
   CLICK_DY 0
+
+gen_needle gmeter
+  POS 289.000000 262.500000
+  IMAGE g_meter/gmeter_round
+  DATAREF sim/flightmodel/forces/g_nrml
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME -100.000000 -223.000000 1.000000
+  KEY_FRAME -5.000000 -223.000000 1.000000
+  KEY_FRAME 1.000000 -94.000000 1.000000
+  KEY_FRAME 10.000000 115.000000 1.000000
+  KEY_FRAME 100.000000 115.000000
+  IS_DRAGGABLE 0
+  OFFSET 0.000000
+
+gen_needle gmeter_min
+  POS 289.000000 262.500000
+  IMAGE g_meter/gmeter_bug_min
+  DATAREF b21/gmeter/min_g
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME -100.000000 -223.000000 1.000000
+  KEY_FRAME -5.000000 -223.000000 1.000000
+  KEY_FRAME 1.000000 -94.000000 1.000000
+  KEY_FRAME 10.000000 115.000000 1.000000
+  KEY_FRAME 100.000000 115.000000
+  IS_DRAGGABLE 0
+  OFFSET 0.000000
+
+gen_needle gmeter_max
+  POS 289.000000 262.500000
+  IMAGE g_meter/gmeter_bug_max
+  DATAREF b21/gmeter/max_g
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME -100.000000 -223.000000 1.000000
+  KEY_FRAME -5.000000 -223.000000 1.000000
+  KEY_FRAME 1.000000 -94.000000 1.000000
+  KEY_FRAME 10.000000 115.000000 1.000000
+  KEY_FRAME 100.000000 115.000000
+  IS_DRAGGABLE 0
+  OFFSET 0.000000
 
 PANEL_3D_END
