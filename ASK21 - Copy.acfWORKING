@@ -140,7 +140,7 @@ P _gear/0/_lonE 0.0
 P _gear/0/_lonN 0.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 2988.100830078
-P _gear/0/_stat_def 0.387254566
+P _gear/0/_stat_def 0.387254536
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -174,7 +174,7 @@ P _gear/1/_lonE 0.0
 P _gear/1/_lonN 0.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 2041.868774414
-P _gear/1/_stat_def 0.082205087
+P _gear/1/_stat_def 0.082205057
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -295,17 +295,6 @@ P _obja/13/_v10_att_y_acf_prt_ref 0.0
 P _obja/13/_v10_att_z_acf_prt_ref 0.0
 P _obja/13/_v10_is_internal 16
 P _obja/13/_v10_steers_with_gear 0
-P _obja/14/_obj_flags 0
-P _obja/14/_v10_att_file_stl ../particles/particles.obj
-P _obja/14/_v10_att_part -1
-P _obja/14/_v10_att_phi_ref 0.0
-P _obja/14/_v10_att_psi_ref 0.0
-P _obja/14/_v10_att_the_ref 0.0
-P _obja/14/_v10_att_x_acf_prt_ref 0.0
-P _obja/14/_v10_att_y_acf_prt_ref 0.0
-P _obja/14/_v10_att_z_acf_prt_ref 0.0
-P _obja/14/_v10_is_internal -1968696614
-P _obja/14/_v10_steers_with_gear 0
 P _obja/2/_obj_flags 152
 P _obja/2/_v10_att_file_stl tail_oriz.obj
 P _obja/2/_v10_att_part -1
@@ -394,7 +383,7 @@ P _obja/9/_v10_att_y_acf_prt_ref 0.0
 P _obja/9/_v10_att_z_acf_prt_ref 0.0
 P _obja/9/_v10_is_internal 0
 P _obja/9/_v10_steers_with_gear 0
-P _obja/count 15
+P _obja/count 14
 P _panel_inst_3d 0
 P _part/10/_bot_s1 0.0
 P _part/10/_bot_s2 0.0
@@ -13606,7 +13595,7 @@ P _part/85/_part_specs_invis 1
 P _part/85/_part_tex 0
 P _part/85/_part_the 0.0
 P _part/85/_part_x 0.0
-P _part/85/_part_y -0.712745428
+P _part/85/_part_y -0.712745488
 P _part/85/_part_z 10.199999809
 P _part/85/_patt_con 0
 P _part/85/_patt_prt 0
@@ -24382,26 +24371,5 @@ ins_timer_GA timer_GA.png
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
-
-gen_rotary smoke
-  POS 600.000000 -18.000000
-  IMAGE smoke/smoke
-  DATAREF sim/cockpit/weapons/missiles_armed
-  KF_WRAP_BOTTOM
-  KF_WRAP_TOP
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
-  DIGITS 2
-  ROTARY_TYPE PUSH
-  CLICK_RADIUS 15.000000
-  CLICK_RADIUS_DY 0.000000
-  OFFSET 0.000000
-  STEP1 1.000000
-  STEP2 1.000000
-  CURSOR BUTTON
-  CLICK_DX 0
-  CLICK_DY 0
 
 PANEL_3D_END
