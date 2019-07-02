@@ -42,7 +42,7 @@ function clicked_trim_trigger(phase)
         playSample(sound_trim, false)
 
         -- if on ground then use yoke pitch position
-        if get(DATAREF_ONGROUND) == 1
+        if true and get(DATAREF_ONGROUND) == 1
         then
             command_trim = get(DATAREF_YOKE_PITCH)
             print("b21_trim On Ground: command trim set to",command_trim)
@@ -86,7 +86,7 @@ function update()
     -- Only apply the adjustments within 5 seconds of command
     -- (otherwise will always override other trim inputs)
     -- Also only update every half-second
-    local trim_time_step = 0.5  -- update 2 per second max
+    local trim_time_step = 0.25  -- update 2 per second max
     if  (time_now_s < command_time_s + 5.0) and (time_delta_s > trim_time_step)
     then
         --local current_trim = DATAREF_TRIM_DEBUG --get(DATAREF_TRIM)
@@ -96,6 +96,10 @@ function update()
         --print("update trim trim_delta="..trim_delta)
         if  math.abs(trim_delta) > 0.05
         then
+            if math.abs(trim_delta) > 0.2
+            then
+                trim_delta = trim_delta > 0 and 0.2 or -0.2
+            end
             local new_trim = current_trim + trim_delta * trim_time_step * TRIM_PER_SECOND
             if new_trim > 1.0
             then

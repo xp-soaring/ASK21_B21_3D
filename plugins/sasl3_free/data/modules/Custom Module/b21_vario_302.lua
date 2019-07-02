@@ -653,6 +653,15 @@ function update_top_number()
         reading = B21_302_arrival_height_m * M_TO_FT --dataref_read("ALT_FT")
     end
 
+    -- limit reading to 4 digits
+    if reading < -9999
+    then
+        reading = -9999
+    elseif reading > 9999
+    then
+        reading = 9999
+    end
+
     dataref_write("NUMBER_TOP", math.abs(reading))
 
     prev_number_top_s = now_s -- record the time we just updated the display
@@ -678,6 +687,11 @@ function update_top_number()
         -- create number 'mask' to put '-' in the right place
         -- e.g. reading = 123 => number_minus=9000, hence '-123'
         number_sign = 10^math.floor(math.log10(-reading)+1)*9
+    end
+    -- fixup for readings 0.X, change 8 to 80, 9 to 90.
+    if number_sign < 10
+    then
+        number_sign = number_sign * 10
     end
 
     dataref_write("NUMBER_TOP_SIGN", number_sign)
