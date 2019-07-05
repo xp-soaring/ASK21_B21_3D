@@ -42,7 +42,7 @@ function clicked_trim_trigger(phase)
         playSample(sound_trim, false)
 
         -- if on ground then use yoke pitch position
-        if true and get(DATAREF_ONGROUND) == 1
+        if true or get(DATAREF_ONGROUND) == 1
         then
             command_trim = get(DATAREF_YOKE_PITCH)
             print("b21_trim On Ground: command trim set to",command_trim)
