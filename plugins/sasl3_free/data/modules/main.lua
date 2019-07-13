@@ -40,12 +40,13 @@ components = {
 	            b21_gpsnav { 
                    position = { 604, 312, 100, 89}
                 },
-                b21_clock {},
-                b21_trim {},
-                b21_altimeter {},
-                b21_gmeter {},
-                b21_yawstring {},
-                b21_smoke {},
+                b21_clock {}, -- moves hands of watch on panel
+                b21_trim {}, -- provides trigger trim command and gradual movement of trim
+                b21_altimeter {}, -- moves needles of altimeter, supports imperial/metric units
+                b21_gmeter {}, -- moves min/max bugs on G-Meter, provides reset command
+                b21_yawstring {}, -- moves yawstring
+                b21_smoke {}, -- provides toggle smoke command
+                b21_seat_toggle {}, -- provides "b21/seat_toggle" command
                 b21_controls_commands {}
              }
 

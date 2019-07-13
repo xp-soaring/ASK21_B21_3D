@@ -44,10 +44,19 @@ function clicked_trim_trigger(phase)
         -- if on ground then use yoke pitch position
         if true or get(DATAREF_ONGROUND) == 1
         then
-            command_trim = get(DATAREF_YOKE_PITCH)
-            print("b21_trim On Ground: command trim set to",command_trim)
+            command_trim = get(DATAREF_YOKE_PITCH) * 1.5
+            if command_trim > 1
+            then
+                command_trim = 1
+            elseif command_trim < -1
+            then
+                command_trim = -1
+            end
+            print("b21_trim (yoke position): command trim set to",command_trim)
             return
         end
+
+        -- note this code below currently disabled as we try 'stick position' for trim setting
 
         -- otherwise set trim according to current airspeed
         local Smin = TRIM_SPEED_KTS[1]
@@ -68,7 +77,7 @@ function clicked_trim_trigger(phase)
         else
             command_trim = -1.0                          -- i.e. set -1
         end
-        print("b21_trim command trim set to",command_trim)
+        print("b21_trim (airspeed) command trim set to",command_trim)
     end
     return 1
 end
