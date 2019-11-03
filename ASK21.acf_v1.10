@@ -4,10 +4,10 @@ ACF
 
 PROPERTIES_BEGIN
 P _cgpt/0/_name empty craft
-P _cgpt/0/_w_max 795.0
-P _cgpt/0/_w_now 795.0
-P _cgpt/0/_w_test 795.0
-P _cgpt/0/_z_ref 9.250000000
+P _cgpt/0/_w_max 850.0
+P _cgpt/0/_w_now 850.0
+P _cgpt/0/_w_test 850.0
+P _cgpt/0/_z_ref 9.750000000
 P _cgpt/1/_name fuel tank #1
 P _cgpt/1/_w_max 0.0
 P _cgpt/1/_w_now 1.0
@@ -140,7 +140,7 @@ P _gear/0/_lonE 0.0
 P _gear/0/_lonN 0.0
 P _gear/0/_lonR 0.0
 P _gear/0/_scon 2988.100830078
-P _gear/0/_stat_def 0.387254506
+P _gear/0/_stat_def 0.387254477
 P _gear/0/_steerdeg_hispeed 0.0
 P _gear/0/_steerdeg_lospeed 0.0
 P _gear/0/_strut_comp 0.0
@@ -174,7 +174,7 @@ P _gear/1/_lonE 0.0
 P _gear/1/_lonN 0.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 2041.868774414
-P _gear/1/_stat_def 0.082205087
+P _gear/1/_stat_def 0.082205094
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp 0.0
@@ -394,18 +394,6 @@ P _obja/21/_v10_att_y_acf_prt_ref 1.269999981
 P _obja/21/_v10_att_z_acf_prt_ref 4.800000191
 P _obja/21/_v10_is_internal -1720904998
 P _obja/21/_v10_steers_with_gear 0
-P _obja/22/_obj_flags 16
-P _obja/22/_obj_hide_dataref b21/no_spin_kit
-P _obja/22/_v10_att_file_stl spin_kit.obj
-P _obja/22/_v10_att_part -1
-P _obja/22/_v10_att_phi_ref 0.0
-P _obja/22/_v10_att_psi_ref 0.0
-P _obja/22/_v10_att_the_ref 0.0
-P _obja/22/_v10_att_x_acf_prt_ref 0.500000000
-P _obja/22/_v10_att_y_acf_prt_ref 1.500000000
-P _obja/22/_v10_att_z_acf_prt_ref 24.899999619
-P _obja/22/_v10_is_internal -603450662
-P _obja/22/_v10_steers_with_gear 0
 P _obja/3/_obj_flags 152
 P _obja/3/_v10_att_file_stl wing_L.obj
 P _obja/3/_v10_att_part -1
@@ -483,7 +471,7 @@ P _obja/9/_v10_att_y_acf_prt_ref 0.0
 P _obja/9/_v10_att_z_acf_prt_ref 0.0
 P _obja/9/_v10_is_internal 0
 P _obja/9/_v10_steers_with_gear 0
-P _obja/count 23
+P _obja/count 22
 P _panel_inst_3d 0
 P _part/10/_bot_s1 0.0
 P _part/10/_bot_s2 0.0
@@ -20715,10 +20703,6 @@ P _wing/9/_yawbr/9 0
 P _wing/9/_yawbr/count 10
 P _wing/count 56
 P _wpna/count 24
-P acf/_APU_cooldown_time 0.001000000
-P acf/_APU_door_time 0.001000000
-P acf/_APU_spooldn_time 15.0
-P acf/_APU_spoolup_time 15.0
 P acf/_AShi_G_k 0.0
 P acf/_AShi_Gdot_k 0.0
 P acf/_AShi_alpha_k 0.0
@@ -22509,7 +22493,6 @@ P acf/_drone_FBW_washout_sqrt_throttle 0
 P acf/_drone_FBW_washout_vert_component 0
 P acf/_dump_altitude 0.0
 P acf/_dump_press_below_1k 0
-P acf/_dump_press_wow 0
 P acf/_elec_drive_eta 1.0
 P acf/_elec_fuelP 30.0
 P acf/_elec_regen_eta 0.0
@@ -22575,7 +22558,6 @@ P acf/_esys_amperage/199 0.0
 P acf/_esys_amperage/200 0.0
 P acf/_esys_amperage/201 0.0
 P acf/_esys_amperage/204 0.0
-P acf/_esys_amperage/215 0.0
 P acf/_esys_amperage/30 0.0
 P acf/_esys_amperage/31 0.0
 P acf/_esys_amperage/32 0.0
@@ -22617,7 +22599,6 @@ P acf/_esys_amperage/rel_ail_trim 0.0
 P acf/_esys_amperage/rel_auto_comp 0.0
 P acf/_esys_amperage/rel_auto_servos 0.0
 P acf/_esys_amperage/rel_avionics_fan 0.100000001
-P acf/_esys_amperage/rel_bad_fuel 0.0
 P acf/_esys_amperage/rel_bus0 0.0
 P acf/_esys_amperage/rel_bus1 0.0
 P acf/_esys_amperage/rel_bus2 0.0
@@ -22680,14 +22661,6 @@ P acf/_esys_amperage/rel_heatPR4 0.0
 P acf/_esys_amperage/rel_heatPR5 0.0
 P acf/_esys_amperage/rel_heatPR6 0.0
 P acf/_esys_amperage/rel_heatPR7 0.0
-P acf/_esys_amperage/rel_ignitr0 0.0
-P acf/_esys_amperage/rel_ignitr1 0.0
-P acf/_esys_amperage/rel_ignitr2 0.0
-P acf/_esys_amperage/rel_ignitr3 0.0
-P acf/_esys_amperage/rel_ignitr4 0.0
-P acf/_esys_amperage/rel_ignitr5 0.0
-P acf/_esys_amperage/rel_ignitr6 0.0
-P acf/_esys_amperage/rel_ignitr7 0.0
 P acf/_esys_amperage/rel_inverter0 0.0
 P acf/_esys_amperage/rel_inverter1 0.0
 P acf/_esys_amperage/rel_lites_beac 0.0
@@ -22754,7 +22727,6 @@ P acf/_esys_bus_bit_add/199 0
 P acf/_esys_bus_bit_add/200 0
 P acf/_esys_bus_bit_add/201 0
 P acf/_esys_bus_bit_add/204 0
-P acf/_esys_bus_bit_add/215 0
 P acf/_esys_bus_bit_add/30 1
 P acf/_esys_bus_bit_add/31 0
 P acf/_esys_bus_bit_add/32 0
@@ -22796,7 +22768,6 @@ P acf/_esys_bus_bit_add/rel_ail_trim 0
 P acf/_esys_bus_bit_add/rel_auto_comp 0
 P acf/_esys_bus_bit_add/rel_auto_servos 0
 P acf/_esys_bus_bit_add/rel_avionics_fan 1
-P acf/_esys_bus_bit_add/rel_bad_fuel 0
 P acf/_esys_bus_bit_add/rel_bus0 1
 P acf/_esys_bus_bit_add/rel_bus1 0
 P acf/_esys_bus_bit_add/rel_bus2 0
@@ -22859,14 +22830,6 @@ P acf/_esys_bus_bit_add/rel_heatPR4 0
 P acf/_esys_bus_bit_add/rel_heatPR5 0
 P acf/_esys_bus_bit_add/rel_heatPR6 0
 P acf/_esys_bus_bit_add/rel_heatPR7 0
-P acf/_esys_bus_bit_add/rel_ignitr0 0
-P acf/_esys_bus_bit_add/rel_ignitr1 0
-P acf/_esys_bus_bit_add/rel_ignitr2 0
-P acf/_esys_bus_bit_add/rel_ignitr3 0
-P acf/_esys_bus_bit_add/rel_ignitr4 0
-P acf/_esys_bus_bit_add/rel_ignitr5 0
-P acf/_esys_bus_bit_add/rel_ignitr6 0
-P acf/_esys_bus_bit_add/rel_ignitr7 0
 P acf/_esys_bus_bit_add/rel_inverter0 0
 P acf/_esys_bus_bit_add/rel_inverter1 0
 P acf/_esys_bus_bit_add/rel_lites_beac 0
@@ -22912,7 +22875,7 @@ P acf/_feather_prop_with_oilp 0
 P acf/_feathered_pitch 0.0
 P acf/_ff_rat_idle_JET 0.100000001
 P acf/_ff_rat_idle_PRP 0.250000000
-P acf/_file_writer_version 113601
+P acf/_file_writer_version 113400
 P acf/_flap1_cd 0.0
 P acf/_flap1_cl 0.0
 P acf/_flap1_cm 0.0
@@ -23197,7 +23160,7 @@ P acf/_jato_thrust 0.0
 P acf/_jett_is_acft 0
 P acf/_jett_is_ret 0
 P acf/_jett_is_slung 0
-P acf/_jett_is_water 1
+P acf/_jett_is_water 0
 P acf/_jett_the 0.0
 P acf/_jett_xyz/0 0.0
 P acf/_jett_xyz/1 0.0
@@ -23214,7 +23177,7 @@ P acf/_m_displaced 0.0
 P acf/_m_displaced_Y 0.0
 P acf/_m_empty 795.0
 P acf/_m_fuel_max_tot 0.0
-P acf/_m_jett 66.0
+P acf/_m_jett 0.0
 P acf/_m_max 1325.0
 P acf/_m_shift 0.0
 P acf/_m_shift_dx 0.0
@@ -23320,7 +23283,7 @@ P acf/_park_non_vect_props_90_below_05 0
 P acf/_part_descrip/24 test1
 P acf/_part_descrip/56 glider fuselage
 P acf/_part_descrip/57 Main wheel fairing
-P acf/_part_descrip/58 Spin Kit
+P acf/_part_descrip/58 Tail wheel fairing
 P acf/_part_descrip/59 Nose wheel fairing
 P acf/_part_descrip/60 right Hound Dog rail
 P acf/_part_descrip/61 drag chute cover
@@ -23663,7 +23626,6 @@ P acf/_starter_engages_ignition 1
 P acf/_starter_is_air_driven 0
 P acf/_starter_max_rpm_rat 1.0
 P acf/_starter_torque_rat 0.250000000
-P acf/_steerdeg_castor 0.0
 P acf/_stickshaker 0
 P acf/_studio Laminar Research
 P acf/_sweep_extend_protect 0
@@ -23714,16 +23676,6 @@ P acf/_tank_rat/6 0.0
 P acf/_tank_rat/7 0.0
 P acf/_tank_rat/8 0.0
 P acf/_tank_rat/count 9
-P acf/_tank_role/0 0
-P acf/_tank_role/1 0
-P acf/_tank_role/2 0
-P acf/_tank_role/3 0
-P acf/_tank_role/4 0
-P acf/_tank_role/5 0
-P acf/_tank_role/6 0
-P acf/_tank_role/7 0
-P acf/_tank_role/8 0
-P acf/_tank_role/count 9
 P acf/_tank_xyz/0,0 0.0
 P acf/_tank_xyz/0,1 0.0
 P acf/_tank_xyz/0,2 0.0
@@ -23753,35 +23705,6 @@ P acf/_tank_xyz/8,1 0.0
 P acf/_tank_xyz/8,2 0.0
 P acf/_tank_xyz/i_count 9
 P acf/_tank_xyz/j_count 3
-P acf/_tank_xyz_full/0,0 0.0
-P acf/_tank_xyz_full/0,1 0.0
-P acf/_tank_xyz_full/0,2 0.0
-P acf/_tank_xyz_full/1,0 0.0
-P acf/_tank_xyz_full/1,1 0.0
-P acf/_tank_xyz_full/1,2 0.0
-P acf/_tank_xyz_full/2,0 0.0
-P acf/_tank_xyz_full/2,1 0.0
-P acf/_tank_xyz_full/2,2 0.0
-P acf/_tank_xyz_full/3,0 0.0
-P acf/_tank_xyz_full/3,1 0.0
-P acf/_tank_xyz_full/3,2 0.0
-P acf/_tank_xyz_full/4,0 0.0
-P acf/_tank_xyz_full/4,1 0.0
-P acf/_tank_xyz_full/4,2 0.0
-P acf/_tank_xyz_full/5,0 0.0
-P acf/_tank_xyz_full/5,1 0.0
-P acf/_tank_xyz_full/5,2 0.0
-P acf/_tank_xyz_full/6,0 0.0
-P acf/_tank_xyz_full/6,1 0.0
-P acf/_tank_xyz_full/6,2 0.0
-P acf/_tank_xyz_full/7,0 0.0
-P acf/_tank_xyz_full/7,1 0.0
-P acf/_tank_xyz_full/7,2 0.0
-P acf/_tank_xyz_full/8,0 0.0
-P acf/_tank_xyz_full/8,1 0.0
-P acf/_tank_xyz_full/8,2 0.0
-P acf/_tank_xyz_full/i_count 9
-P acf/_tank_xyz_full/j_count 3
 P acf/_the_eqlbm 0.903030217
 P acf/_thro_non_vect_props_at_sin_vect 0
 P acf/_thro_x_ctr 0.0
@@ -23841,7 +23764,7 @@ P acf/_warn_transonic_EQ 0
 P acf/_warn_verbal_500_agl 0
 P acf/_wate_xyz/0 0.0
 P acf/_wate_xyz/1 0.500000000
-P acf/_wate_xyz/2 23.500000000
+P acf/_wate_xyz/2 9.500000000
 P acf/_wate_xyz/count 3
 P acf/_water_drop_dep_time 0.100000001
 P acf/_water_rud_Z 0.0
@@ -24610,45 +24533,6 @@ gen_trigger gmeter_reset
   KEY_FRAME 1.000000 1.000000
   CLICK_RADIUS 10.000000
   CLICK_RADIUS_DY 0.000000
-  CURSOR DEFAULT
-  CLICK_DX 0
-  CLICK_DY 0
-
-gen_rotary gen_rotary.png
-  POS -234.000000 249.000000
-  DATAREF 
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 6.000000
-  DIGITS 7
-  ROTARY_TYPE ROTARY
-  CLICK_RADIUS 10.000000
-  CLICK_RADIUS_DY 0.000000
-  OFFSET 0.000000
-  STEP1 1.000000
-  STEP2 1.000000
-  CURSOR DEFAULT
-  CLICK_DX 0
-  CLICK_DY 0
-
-gen_rotary spin kit
-  POS 424.000000 -18.000000
-  IMAGE spin_kit/spin_kit
-  DATAREF b21/no_spin_kit
-  KF_WRAP_BOTTOM
-  KF_WRAP_TOP
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
-  DIGITS 2
-  ROTARY_TYPE PUSH
-  CLICK_RADIUS 10.000000
-  CLICK_RADIUS_DY 0.000000
-  OFFSET 0.000000
-  STEP1 1.000000
-  STEP2 1.000000
   CURSOR DEFAULT
   CLICK_DX 0
   CLICK_DY 0

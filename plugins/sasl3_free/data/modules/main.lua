@@ -47,6 +47,7 @@ components = {
                 b21_yawstring {}, -- moves yawstring
                 b21_smoke {}, -- provides toggle smoke command
                 b21_seat_toggle {}, -- provides "b21/seat_toggle" command
+                b21_spin_kit {}, -- controls spin kit enable/disable
                 b21_controls_commands {}
              }
 
